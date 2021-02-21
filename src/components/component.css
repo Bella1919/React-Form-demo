@@ -1,0 +1,76 @@
+#navstyle {
+    width:100%;
+    margin:auto
+}
+#h1style{
+    margin:auto;
+    font-size:25px
+}
+#cardstyle{
+    width:600px;
+    margin-top:3%;
+    margin-left:45%;
+    margin-bottom: 3%;
+}
+.fnamestyle{
+    margin-top: auto;
+}
+.fname{
+    width:550px;
+}
+
+#submit{
+    border: none;
+    background-color:#16A085 ;
+    color: white;
+    border-radius: 5px;
+    height: 38px;
+    width: 70px;
+}
+#home{
+    border: none;
+    background-color:#F39C12 ;
+    color: white;
+    border-radius: 5px;
+    height: 38px;
+    width: 70px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+#sideFormStyle{
+    width:350px;
+    margin-top: 25px;
+    margin-left: 15%;
+
+}
+#sideFormHeaderStyle{
+    background-color: #AED6F1 ;
+}
+.headerText{
+    color:#1222F3;
+    font-style: italic;
+    margin: auto;
+}
+.fStatues{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.fValue{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.sideInput{
+    border-style: none;
+    margin-bottom: 20px;
+}
+.inputUnder{
+    width:550px;
+    height: 38px;
+    font-size: 18px;
+    border-radius: 3px;
+    color:#670A05;
+    margin-top: 5px;
+    margin-bottom: 0%;
+    padding-left: 15px;
+    padding-top: 5px;    
+}
