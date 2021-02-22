@@ -1,23 +1,19 @@
-import React, { Component } from 'react'
+import React, { useState, Component } from 'react'
 import './components/component.css'
 import Navbar from './components/navbar';
 import Form from './components/form'
 import Sideform from './components/Sideform'
 
-class App extends Component{
-  
+export default function App(){
+  const [stuff ,setStuff] = useState('')
 
-  render(){
-    return(
-      <React.Fragment>
-        <Navbar />
-        <div>
-          <Sideform />
-          <Form />
-        </div>
-      </React.Fragment>
-    )
-  }
+  return(
+    <React.Fragment>
+      <Navbar />
+      <div>
+        <Sideform stuff={stuff} />
+        <Form stuff={(abc)=>setStuff(abc)} />
+      </div>
+    </React.Fragment>
+  )
 }
-
-export default App;

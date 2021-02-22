@@ -9,12 +9,15 @@ import Lastname from './Lastname'
 import Firstname from './Firstname'
 
 
-const Form=()=>{
+const Form=({stuff})=>{ 
     const [text,setText] = useState('')
     const getChange=(e)=>{
+
         setText(e.target.value)
+        console.log(text)
+        stuff(text)
         }
-    
+
     return(
         <div className="card border-sencondary position-relative" id="cardstyle">
             <div className="card-header text-white bg-primary">
@@ -26,7 +29,8 @@ const Form=()=>{
                 <form>
                     {/* first name */}
                     <Firstname 
-                        inputChange={getChange} 
+
+                        inputChange={getChange}
                         testInput={text.length>=2 && text.length<20 || text.length===0}
                     />
                     {/* last name */}

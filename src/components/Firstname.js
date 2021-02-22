@@ -6,7 +6,6 @@ const Firstname = ({text,inputChange,testInput}) => {
             <label htmlFor="fname">First Name</label>
             <input type="text" 
                    className="form-control fname" 
-                   value={text} 
                    onChange={inputChange}
                    placeholder={"Your first name"}
             /> 
@@ -16,9 +15,9 @@ const Firstname = ({text,inputChange,testInput}) => {
             >
                 {testInput?"":"2-20 characters required"}
             </p>
-            <p>
+            {/* <p>
                 {text}
-            </p>
+            </p> */}
         </div>
     )
 }
